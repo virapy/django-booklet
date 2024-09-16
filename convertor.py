@@ -96,7 +96,7 @@ def generate_toc_and_add_links(html_content):
 
 # Function to read markdown file and convert to HTML
 def convert_markdown_file(input_file, output_file, title):
-    regex = r"([^\\]+)\.md$"
+    regex = r"(season-\d+)\.md$"
     md_name = (re.search(regex, input_file)).group(1)
 
     with open(input_file, 'r', encoding='utf-8') as file:
